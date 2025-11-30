@@ -4,10 +4,6 @@
  */
 package sudoku;
 
-/**
- *
- * @author DELL
- */
 
 
 import java.util.List;
@@ -29,6 +25,7 @@ public class ColumnChecker extends AbstractChecker {
             for (int r = 0; r < 9; r++) {
                 col[r] = board[r][c];
             }
+            
             findDuplicates(col, "COL " + (c + 1), 1);
         }
     }
