@@ -4,10 +4,6 @@
  */
 package sudoku;
 
-/**
- *
- * @author DELL
- */
 
 
 import java.util.List;
@@ -33,9 +29,9 @@ public class BoxChecker extends AbstractChecker {
                 for (int c = 0; c < 3; c++) {
                     box[idx++] = board[boxRow + r][boxCol + c];
                 }
-            }
-            // Positions in box: flatten to 1-9, but as per output, it's [1,2,3,...] for duplicates
+            }        
             findDuplicates(box, "BOX " + (b + 1), 1);
         }
     }
+
 }
