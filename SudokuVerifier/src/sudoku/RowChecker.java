@@ -17,6 +17,7 @@ public class RowChecker extends AbstractChecker {
 
     public RowChecker(int[][] board, Map<String, List<DuplicateInfo>> errors, int index) {
         super(board, errors, index);
+        
     }
 
     @Override
@@ -26,7 +27,8 @@ public class RowChecker extends AbstractChecker {
 
         for (int r = start; r < end; r++) {
             int[] row = board[r];
-            findDuplicates(row, "ROW " + (r + 1), 1); // positions 1-9
+            
+            findDuplicates(row, "ROW " + (r + 1), 1); 
         }
     }
 }
