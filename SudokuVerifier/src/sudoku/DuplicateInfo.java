@@ -4,10 +4,6 @@
  */
 package sudoku;
 
-/**
- *
- * @author DELL
- */
 
 
 import java.util.ArrayList;
