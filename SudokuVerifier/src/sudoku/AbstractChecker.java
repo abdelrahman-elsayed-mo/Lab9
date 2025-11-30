@@ -18,7 +18,7 @@ import java.util.Map;
 public abstract class AbstractChecker implements Checker {
   protected int[][] board;
     protected Map<String, List<DuplicateInfo>> errors;
-    protected int index; // 0 means all, else specific 1-9
+    protected int index; 
 
     public AbstractChecker(int[][] board, Map<String, List<DuplicateInfo>> errors, int index) {
         this.board = board;
